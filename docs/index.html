@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihir & Maitri's Invitation</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // New body font Lora (used as default for the page)
+                        'body': ['Lora', 'serif'],
+                        // New elegant display font (Playfair Display)
+                        'display': ['Playfair Display', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        'event-gold': '#A67C00', // A richer, classic gold
+                        'event-navy': '#1D3557', // A slightly softer, deep navy
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<!-- Apply the new 'font-body' (Lora) class to the entire body -->
+<body class="font-body bg-gray-50 text-gray-800 min-h-screen flex flex-col justify-center items-center py-10">
+
+    <div class="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Top Invitation Text -->
+        <header class="text-center mb-10">
+            <!-- Apply new 'font-display' (Playfair Display) class to the heading -->
+            <h1 class="text-6xl md:text-8xl font-display font-bold text-event-navy tracking-tighter">
+                You're Invited
+            </h1>
+            <p class="mt-4 text-xl text-gray-500 font-medium">
+                Mihir & Maitri | November 30, 2025
+            </p>
+        </header>
+
+        <!-- Responsive Video Container -->
+        <div class="mt-8 relative shadow-2xl rounded-xl overflow-hidden border-4 border-event-gold" style="padding-top: 56.25%;">
+            <!-- Apply new gold border -->
+            <!-- 16:9 Aspect Ratio (56.25% height relative to width) -->
+            <iframe 
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://drive.google.com/file/d/1p3JTUif1yaSkRbUNh0H-Juvu1frWoyHS/preview" 
+                title="Save the Date Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Bottom Call to Action Text -->
+        <footer class="mt-12 text-center p-6 bg-white rounded-xl shadow-lg">
+            <p class="text-lg text-gray-700">
+                Please confirm your attendance and get event updates by joining the exclusive group:
+            </p>
+            <a 
+                href="https://chat.whatsapp.com/H28ciXTeLTCBD0O9MVkM20" 
+                target="_blank"
+                class="mt-4 inline-block px-8 py-3 bg-event-gold text-white font-bold text-lg rounded-full shadow-md hover:bg-yellow-700 transition duration-300 transform hover:scale-105"
+            >
+                Join Event Group Here
+            </a>
+            <p class="mt-4 text-xs text-gray-400">
+                (Please ty to  RSVP before 8th Nov positively. Thanks)
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
